@@ -48,3 +48,32 @@ x = cos(i)
 y = sin(i)
 plot(x,y)
 grid on
+
+# Plot ½Ç½À
+x = -pi:0.05:pi
+a = cos(x)
+b = sin(x)
+
+figure(1)
+subplot(211)
+plot(x,a)
+xlabel('x')
+ylabel('y')
+title('a=cos(x)')
+grid on
+
+figure(2)
+subplot(212)
+plot(a,b)
+xlabel('x')
+ylabel('y')
+axis([-2,2,-2,2])
+title('Graph of Circle')
+grid on
+
+figure(3)
+plot(x, a, x, b)
+legend('cos(x)', 'sin(x)')
+xlabel('x')
+ylabel('y')
+grid on
